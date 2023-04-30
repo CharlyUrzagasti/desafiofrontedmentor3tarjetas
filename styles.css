@@ -1,0 +1,119 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+:root{
+    --brightOrange: hsl(31, 77%, 52%);
+    --darkCyan: hsl(184, 100%, 22%);
+    --veryDarkCyan: hsl(179, 100%, 13%);
+    --transparentWhite: hsla(0, 0%, 100%, 0.75);
+    --VeryLightGray: hsl(0, 0%, 95%);
+}
+
+/* VeryLightGray(background, headings, buttons) */
+
+body{
+    background-color: var(--VeryLightGray);
+    font-size: 15px;
+    font-family:Lexend Deca;
+}
+.main-container{
+
+width: 325px;
+margin:87px auto 40px;
+border-radius: 8px;
+overflow: hidden;
+}
+
+
+
+article{
+  width: 100%;  
+  height: 440px;
+  padding: 48px;
+  
+}
+.sedan{
+    background-color: var(--brightOrange);
+}
+.suvs{
+    background-color: var(--darkCyan);
+}
+.luxury{
+    background-color: var(--veryDarkCyan);
+}
+img{
+    margin-bottom: 36px;
+}
+h1{
+    font-family:big Shoulders display;
+    color: var(--VeryLightGray);
+    font-size: 2,4rem;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+.parrafo{
+color: var(--transparentWhite);
+margin-bottom: 25px;
+} 
+
+.boton{
+    width: 148px;
+    height: 46px;
+    border-radius: 45px;
+    border-style: none;
+    font-family:Lexend Deca;
+    background-color: var(--VeryLightGray);
+    font-size: 15px;
+}
+.boton:hover{
+    cursor: pointer;
+    border: 2px solid var(--VeryLightGray);
+}
+
+#sedan-btn{
+    color: var(--brightOrange);  
+}
+
+#suvs-btn{
+    color:var(--darkCyan);
+}
+#luxury-btn{
+    color:var(--veryDarkCyan);
+}
+
+#sedan-btn:hover{
+    background-color: var(--brightOrange);  
+    color: var(--VeryLightGray);
+}
+
+#suvs-btn:hover{
+    background-color:var(--darkCyan);
+    color: var(--VeryLightGray);
+}
+#luxury-btn:hover{
+    background-color:var(--veryDarkCyan);
+    color: var(--VeryLightGray);
+}
+.attribution{
+    font-size: 12px;
+    text-align: center;
+    margin-top: 5px;
+}
+
+@media (min-width:944px){
+    .main-container{
+        width:924px;
+        display: flex;
+        margin-top: 170px;
+    }
+    .parrafo{
+        margin-bottom: 80px;
+    }
+    .attribution{
+        text-align: center;
+    }
+}
